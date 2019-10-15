@@ -17,6 +17,8 @@ in fecal samples.
         data.loc[(data['# contigs'] == 0) | (data['# contigs'] >= 300) | (data['N50'] <= 25000)]
 5. Genome annotation with prokka (see prokka.sh)
 
+Note: with the exception of Prokka, all other analyses were done on the HCC at UNL. Prokka was done on AWS. Please refer to this repository for instruction of how to install prokka on AWS (https://github.com/jcgneto/installing_conda_and_prokka_aws). The reason to use prokka on AWS is that it allowed us to customized the reference genome database inside the program to contain a Bifidobacterium genus folder that used specific assemblies chosen by us (the list of assemblies can be found here (list_reference_bifido_genomes.txt).
+
 # Phylogroup analysis:
 
 Phylogroup determination was done using a GTR model-based phylogeny that had as input the core-genome alignment produced
