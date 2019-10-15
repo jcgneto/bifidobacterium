@@ -18,6 +18,7 @@ in fecal samples.
 5. Genome annotation with prokka (see prokka.sh)
 
 Note: with the exception of Prokka, all other analyses were done on the HCC at UNL. Prokka was done on AWS. Please refer to this repository for instruction of how to install prokka on AWS (https://github.com/jcgneto/installing_conda_and_prokka_aws). The reason to use prokka on AWS is that it allowed us to customized the reference genome database inside the program to contain a Bifidobacterium genus folder that used specific assemblies chosen by us (the list of assemblies can be found here (https://github.com/jcgneto/bifidobacterium/blob/master/list_reference_bifido_genomes.txt).
+See prokka_genus.sh for the program used to create the genus database.
 
 # Phylogroup analysis:
 
