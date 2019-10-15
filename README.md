@@ -1,5 +1,5 @@
 # Bifidobacterium dataset
-Finding candidate genes for qPCR 
+In silico steps to find candidate genes for qPCR 
 
 # Objective
 
@@ -38,7 +38,7 @@ After defining the phylogroup structure, we have accessed the potential for phyl
 In order to do that the following steps were taken:
 
 1. Run the common (general) steps in the analysis
-2. Within each phylogroup we ran the snp-sites analysis using the roary output core_geneme_alignment.aln file 
+2. Within each phylogroup (see phylogroup analysis above) we ran the snp-sites analysis using the roary output core_geneme_alignment.aln file 
     as input (see scripts named as snp_sites*.sh),
     followed by filtering putative recombination regions with gubbins (see scripts named as gubbins*.sh) using the 
     .aln file from snp_sites as input
@@ -50,6 +50,12 @@ In order to do that the following steps were taken:
     
 # Identification of candidate genes that are phylogroup/phylotype specific 
 
+The ultimate goal of the entire analysis was to identifying candidate genes that are uniquely present in either a
+phylogroup or phylotype. If the phylogroup could not be broken down into phylotypes, then a candidate gene was defined as
+phylogroup specific. Otherwise, phylotype specific genes were found by contrasting the phylotype pangenome data against the remainder genomes belonging to either the same phylogroup or others. Steps taken for that:
+
+1. Run common steps, phylogroup and phylotype analyses as described above
+2. Candidate gene identification was done combining the query_pan_genome function inside roary and customed python/pandas scripts. The query_pan_genome function basically seeks to find genes uniquely present, or shared, between two sets of isolates or genomes. Our customed python scripts does virtually the same. We basically filter out all the shared genes from a pangenome matrix, identify candidates unquely present in each group, and lastly, we cross-check the presence of that gene across all phylogroups using crosstabs. The best candidates were selected on the followinng criteria: 1) Be present only in the target group; 2) Longer contigs or sequences; and 3) By avoinding core functions.
 
 
 
