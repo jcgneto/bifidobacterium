@@ -65,4 +65,6 @@ phylogroup specific. Otherwise, phylotype specific genes were found by contrasti
 3. Bankevich A., et al. (2012). SPAdes: A New Genome Assembly Algorithm and Its Applications to Single-Cell Sequencing. Journal of Computational Biology, 19(5): 455–477.
 4. Seemann T. (2014). Prokka: rapid prokaryotic genome annotation. Bioinformatics, 30(14):2068-9.
 5. Andrew J., et al. (2015). Roary: rapid large-scale prokaryote pan genome analysis. Bioinformatics, 31(22):3691–3693.
-6. 
+6. Croucher N.J. (2014). Rapid phylogenetic analysis of large samples of recombinant bacterial whole genome sequences using Gubbins. Nucleic Acids Research, 43(3): e15. 
+7. Page A.J., et al. (2016). SNP-sites: rapid efficient extraction of SNPs from multi-FASTA alignments. Microbial Genomics, 2(4).
+8. Price M.N., et al. (2010). FastTree 2--approximately maximum-likelihood trees for large alignments.PLoS One, 5(3):e9490.
