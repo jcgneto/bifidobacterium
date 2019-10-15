@@ -41,11 +41,9 @@ In order to do that the following steps were taken:
 2. Within each phylogroup (see phylogroup analysis above) we ran the snp-sites analysis [ref 9] using the roary output core_geneme_alignment.aln file as input (see scripts names below), followed by filtering putative recombination regions with Gubbins [ref 10] (see scripts names below) using the .aln file from snp_sites as input
         Scripts used are (> indicates the running order from left to right):
         
-        **roary_phylogroup1.sh > snp_phylogroup1.sh > gubbins_phylogroup1.sh**
-        
-        **roary_phylogroup3.sh > snp_phylogroup3.sh > gubbins_phylogroup3.sh**
-        
-        **roary_phylogroup4.sh > snp_phylogroup4.sh > gubbins_phylogroup4.sh**
+        roary_phylogroup1.sh > snp_phylogroup1.sh > gubbins_phylogroup1.sh
+        roary_phylogroup3.sh > snp_phylogroup3.sh > gubbins_phylogroup3.sh
+        roary_phylogroup4.sh > snp_phylogroup4.sh > gubbins_phylogroup4.sh
 3. Gubbins not only filters recombination regions but generates a FasTree-based phylogenetic tree using the default         parameters chosen by Gubbins
 4. Phylogenetic tree was visualized using Phandango, with the input files being .tree output from Gubbins plus
     gene_presence_absence.csv file from Roary to access the pangenome within each phylogroup
@@ -62,16 +60,16 @@ phylogroup specific. Otherwise, phylotype specific genes were found by contrasti
 2. Candidate gene identification was done combining the query_pan_genome function inside Roary and customed python/pandas scripts. The query_pan_genome function basically seeks to find genes uniquely present, or shared, between two sets of isolates or genomes. Our customed python scripts does virtually the same. We basically filter out all the shared genes from a pangenome matrix, identify candidates unquely present in each group, and lastly, we cross-check the presence of that gene across all phylogroups using crosstabs. The best candidates were selected on the followinng criteria: 1) Be present only in the target group; 2) Longer contigs or sequences; and 3) By avoinding core functions.
         Roary scripts used are listed below:
         
-        **unique_phylogroup1.sh** (get a list of phylogroup1 unique genes)
-        **unique_phylogroup2.sh** (get a list of phylogroup2 unique genes)
-        **unique_phylogroup3.sh** (get a list of phylogroup3 unique genes)
-        **unique_phylogroup4.sh** (get a list of phylogroup4 unique genes)
-        **unique_phylogroup5.sh** (get a list of phylogroup5 unique genes)
-        **phylogroup_1_phylotype_1.sh** (get a list of phylogroup_1_phylotype_1 unique genes)
-        **phylogroup_1_phylotype_2.sh** (get a list of phylogroup_1_phylotype_2 unique genes)
-        **phylogroup_4_phylotype_1.sh** (get a list of phylogroup_4_phylotype_1 unique genes)
-        **phylogroup_4_phylotype_2.sh** (get a list of phylogroup_4_phylotype_2 unique genes)
-        **phylogroup_4_phylotype_3.sh** (get a list of phylogroup_4_phylotype_3 unique genes)
+        unique_phylogroup1.sh (get a list of phylogroup1 unique genes)
+        unique_phylogroup2.sh (get a list of phylogroup2 unique genes)
+        unique_phylogroup3.sh (get a list of phylogroup3 unique genes)
+        unique_phylogroup4.sh (get a list of phylogroup4 unique genes)
+        unique_phylogroup5.sh (get a list of phylogroup5 unique genes)
+        phylogroup_1_phylotype_1.sh (get a list of phylogroup_1_phylotype_1 unique genes)
+        phylogroup_1_phylotype_2.sh (get a list of phylogroup_1_phylotype_2 unique genes)
+        phylogroup_4_phylotype_1.sh (get a list of phylogroup_4_phylotype_1 unique genes)
+        phylogroup_4_phylotype_2.sh (get a list of phylogroup_4_phylotype_2 unique genes)
+        phylogroup_4_phylotype_3.sh (get a list of phylogroup_4_phylotype_3 unique genes)
         
 ## References
 
