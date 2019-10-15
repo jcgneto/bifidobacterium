@@ -1,0 +1,166 @@
+LOCUS       NZ_AP012322          2021974 bp    DNA     circular CON 10-APR-2017
+DEFINITION  Bifidobacterium angulatum DSM 20098 = JCM 7096 DNA, complete
+            genome.
+ACCESSION   NZ_AP012322
+VERSION     NZ_AP012322.1
+DBLINK      BioProject: PRJNA224116
+            BioSample: SAMD00061039
+            Assembly: GCF_001025155.1
+KEYWORDS    RefSeq.
+SOURCE      Bifidobacterium angulatum DSM 20098 = JCM 7096
+
+
+LOCUS       NZ_AP012331          3158347 bp    DNA     circular CON 30-AUG-2019
+DEFINITION  Bifidobacterium scardovii JCM 12489 = DSM 13734 DNA, complete
+            genome.
+ACCESSION   NZ_AP012331
+VERSION     NZ_AP012331.1
+DBLINK      BioProject: PRJNA224116
+            BioSample: SAMD00061046
+            Assembly: GCF_001042635.1
+KEYWORDS    RefSeq.
+SOURCE      Bifidobacterium scardovii JCM 12489 = DSM 13734
+
+
+LOCUS       NZ_CP011786          1830060 bp    DNA     circular CON 28-AUG-2019
+DEFINITION  Bifidobacterium actinocoloniiforme DSM 22766, complete genome.
+ACCESSION   NZ_CP011786
+VERSION     NZ_CP011786.1
+DBLINK      BioProject: PRJNA224116
+            BioSample: SAMN02442035
+            Assembly: GCF_001263395.1
+KEYWORDS    RefSeq.
+SOURCE      Bifidobacterium actinocoloniiforme DSM 22766
+  ORGANISM  Bifidobacterium actinocoloniiforme DSM 22766
+
+
+LOCUS       NZ_CP007287          1755151 bp    DNA     circular CON 27-AUG-2019
+DEFINITION  Bifidobacterium coryneforme strain LMG18911, complete genome.
+ACCESSION   NZ_CP007287
+VERSION     NZ_CP007287.1
+DBLINK      BioProject: PRJNA224116
+            BioSample: SAMN02666223
+            Assembly: GCF_000737865.1
+KEYWORDS    RefSeq.
+SOURCE      Bifidobacterium coryneforme
+  ORGANISM  Bifidobacterium coryneforme
+
+
+LOCUS       NZ_CP006018          1734546 bp    DNA     circular CON 27-AUG-2019
+DEFINITION  Bifidobacterium indicum LMG 11587 = DSM 20214, complete genome.
+ACCESSION   NZ_CP006018
+VERSION     NZ_CP006018.1
+DBLINK      BioProject: PRJNA224116
+            BioSample: SAMN05771123
+            Assembly: GCF_000706765.1
+KEYWORDS    RefSeq.
+SOURCE      Bifidobacterium indicum LMG 11587 = DSM 20214
+  ORGANISM  Bifidobacterium indicum LMG 11587 = DSM 20214
+
+
+LOCUS       NC_004307            2256640 bp    DNA     circular CON 03-AUG-2016
+DEFINITION  Bifidobacterium longum NCC2705 chromosome, complete genome.
+ACCESSION   NC_004307
+VERSION     NC_004307.2
+DBLINK      BioProject: PRJNA57939
+            Assembly: GCF_000007525.1
+KEYWORDS    RefSeq.
+SOURCE      Bifidobacterium longum NCC2705
+  ORGANISM  Bifidobacterium longum NCC2705
+            Bacteria; Actinobacteria; Bifidobacteriales; Bifidobacteriaceae;
+
+
+LOCUS       CP001606             1938483 bp    DNA     circular BCT 18-FEB-2015
+DEFINITION  Bifidobacterium animalis subsp. lactis DSM 10140, complete genome.
+ACCESSION   CP001606
+VERSION     CP001606.1
+DBLINK      BioProject: PRJNA32893
+            BioSample: SAMN02603171
+KEYWORDS    .
+SOURCE      Bifidobacterium animalis subsp. lactis DSM 10140
+  ORGANISM  Bifidobacterium animalis subsp. lactis DSM 10140
+            Bacteria; Actinobacteria; Bifidobacteriales; Bifidobacteriaceae;
+
+
+LOCUS       NZ_AP012324          2269415 bp    DNA     circular CON 03-APR-2017
+DEFINITION  Bifidobacterium breve DSM 20213 = JCM 1192 DNA, complete genome.
+ACCESSION   NZ_AP012324
+VERSION     NZ_AP012324.1
+DBLINK      BioProject: PRJNA224116
+            BioSample: SAMD00061041
+            Assembly: GCF_001025175.1
+KEYWORDS    RefSeq.
+SOURCE      Bifidobacterium breve DSM 20213 = JCM 1192
+  ORGANISM  Bifidobacterium breve DSM 20213 = JCM 1192
+
+
+LOCUS       NC_014638            2214656 bp    DNA     circular CON 03-AUG-2016
+DEFINITION  Bifidobacterium bifidum PRL2010 chromosome, complete genome.
+ACCESSION   NC_014638
+VERSION     NC_014638.1
+DBLINK      BioProject: PRJNA59883
+            Assembly: GCF_000165905.1
+KEYWORDS    RefSeq.
+SOURCE      Bifidobacterium bifidum PRL2010
+  ORGANISM  Bifidobacterium bifidum PRL2010
+            Bacteria; Actinobacteria; Bifidobacteriales; Bifidobacteriaceae;
+
+
+LOCUS       NZ_CP007457          2032698 bp    DNA     circular CON 28-AUG-2019
+DEFINITION  Bifidobacterium pseudolongum PV8-2, complete genome.
+ACCESSION   NZ_CP007457
+VERSION     NZ_CP007457.1
+DBLINK      BioProject: PRJNA224116
+            BioSample: SAMN03253091
+            Assembly: GCF_000800475.2
+KEYWORDS    RefSeq.
+SOURCE      Bifidobacterium pseudolongum PV8-2
+  ORGANISM  Bifidobacterium pseudolongum PV8-2
+
+
+LOCUS       NZ_AP012326          2635669 bp    DNA     circular CON 28-AUG-2019
+DEFINITION  Bifidobacterium dentium JCM 1195 = DSM 20436 DNA, complete genome.
+ACCESSION   NZ_AP012326
+VERSION     NZ_AP012326.1
+DBLINK      BioProject: PRJNA224116
+            BioSample: SAMD00061043
+            Assembly: GCF_001042595.1
+KEYWORDS    RefSeq.
+SOURCE      Bifidobacterium dentium JCM 1195 = DSM 20436
+  ORGANISM  Bifidobacterium dentium JCM 1195 = DSM 20436
+
+
+LOCUS       NC_008618            2089645 bp    DNA     circular CON 01-AUG-2019
+DEFINITION  Bifidobacterium adolescentis ATCC 15703 DNA, complete genome.
+ACCESSION   NC_008618 NZ_BAAD01000000 NZ_BAAD01000001-BAAD01000012
+VERSION     NC_008618.1
+DBLINK      BioProject: PRJNA224116
+            BioSample: SAMD00061080
+            Assembly: GCF_000010425.1
+KEYWORDS    RefSeq.
+SOURCE      Bifidobacterium adolescentis ATCC 15703
+  ORGANISM  Bifidobacterium adolescentis ATCC 15703
+
+
+LOCUS       NC_020546            2291643 bp    DNA     circular CON 26-AUG-2019
+DEFINITION  Bifidobacterium thermophilum RBL67, complete genome.
+ACCESSION   NC_020546
+VERSION     NC_020546.1
+DBLINK      BioProject: PRJNA224116
+            BioSample: SAMN02603226
+            Assembly: GCF_000347695.1
+KEYWORDS    RefSeq.
+SOURCE      Bifidobacterium thermophilum RBL67
+  ORGANISM  Bifidobacterium thermophilum RBL67
+
+
+LOCUS       NC_018720            2167304 bp    DNA     circular CON 26-AUG-2019
+DEFINITION  Bifidobacterium asteroides PRL2011, complete genome.
+ACCESSION   NC_018720
+VERSION     NC_018720.1
+DBLINK      BioProject: PRJNA224116
+            BioSample: SAMN02604114
+            Assembly: GCF_000304215.1
+KEYWORDS    RefSeq.
+SOURCE      Bifidobacterium asteroides PRL2011
+  ORGANISM  Bifidobacterium asteroides PRL2011
