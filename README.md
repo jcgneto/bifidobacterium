@@ -41,7 +41,9 @@ In order to do that the following steps were taken:
 2. Within each phylogroup (see phylogroup analysis above) we ran the snp-sites analysis [ref 9] using the roary output core_geneme_alignment.aln file as input (see scripts names below), followed by filtering putative recombination regions with Gubbins [ref 10] (see scripts names below) using the .aln file from snp_sites as input
         Scripts used are (> indicates the running order from left to right):
         **roary_phylogroup1.sh > snp_phylogroup1.sh > gubbins_phylogroup1.sh**
+        
         **roary_phylogroup3.sh > snp_phylogroup3.sh > gubbins_phylogroup3.sh**
+        
         **roary_phylogroup4.sh > snp_phylogroup4.sh > gubbins_phylogroup4.sh**
 3. Gubbins not only filters recombination regions but generates a FasTree-based phylogenetic tree using the default         parameters chosen by Gubbins
 4. Phylogenetic tree was visualized using Phandango, with the input files being .tree output from Gubbins plus
