@@ -8,7 +8,7 @@ in fecal samples.
 
 # Common steps taken:
 
-1. Fastqc paired-ended Illumina reads (see fastqc_raw_files.sh)
+1. Fastqc paired-ended Illumina reads (see fastqc_raw_files.sh) [ref 1]
 2. Trimming reads using trimmomatic (see trimming.sh) and fastqc using Fastqc (see fastqc_trimmed_files.sh)
 3. De novo assembly with Spades (see spades.sh)
 4. Using Quast for quality control by eliminating contigs that were equal to 0 or >= 300 in length, or had a N50 <= 25000
