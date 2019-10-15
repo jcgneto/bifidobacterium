@@ -71,6 +71,8 @@ phylogroup specific. Otherwise, phylotype specific genes were found by contrasti
         phylogroup_4_phylotype_2.sh (get a list of phylogroup_4_phylotype_2 unique genes)
         phylogroup_4_phylotype_3.sh (get a list of phylogroup_4_phylotype_3 unique genes)
         
+Note - this analysis does not guarantee that the primers are specific for each strain across the Bifido genus. There are limitations to specificity, but we tried our best to make it work for our system.
+
 ## References
 
 1. Andrews S. (2010). FastQC: a quality control tool for high throughput sequence data. Available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc
