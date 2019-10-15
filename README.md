@@ -34,8 +34,20 @@ by roary, and here are the computational steps:
 
 # Phylotype analysis
 
+After defining the phylogroup structure, we have accessed the potential for phylogroup sub-division into phylotypes.
+In order to do that the following steps were taken:
 
-
+1. Run the common (general) steps in the analysis
+2. Within each phylogroup we ran the snp-sites analysis using the roary output core_geneme_alignment.aln file 
+    as input (see scripts named as snp_sites*.sh),
+    followed by filtering putative recombination regions with gubbins (see scripts named as gubbins*.sh) using the 
+    .aln file from snp_sites as input
+3. Gubbins not only filter recombination regions but generates a Fastree-based phylogenetic tree
+4. Phylogenetic tree was visualized using Phandango, with the input files being .tree output from Gubbins plus
+    gene_presence_absence.csv file from Roary to access the pangenome within each phylogroup
+5. The combination of phylogenetic positioning and pangenome repertoire were used to define how many phylotypes existed
+    within each phylogroup
+    
 # Identification of candidate genes that are phylogroup/phylotype specific 
 
 
