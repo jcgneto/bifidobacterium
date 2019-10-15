@@ -9,13 +9,13 @@ in fecal samples.
 # Common steps taken:
 
 1. Fastqc paired-ended Illumina reads (see fastqc_raw_files.sh) [ref 1]
-2. Trimming reads using trimmomatic (see trimming.sh) and fastqc using Fastqc (see fastqc_trimmed_files.sh)
-3. De novo assembly with Spades (see spades.sh)
+2. Trimming reads using trimmomatic (see trimming.sh) [ref 2] and fastqc using Fastqc (see fastqc_trimmed_files.sh) 
+3. De novo assembly with Spades (see spades.sh) [ref 3]
 4. Using Quast for quality control by eliminating contigs that were equal to 0 or >= 300 in length, or had a N50 <= 25000
-        (see quast.sh)
+        (see quast.sh) [ref 4]
         python(pandas) script used to filter out quality assemblies:
         data.loc[(data['# contigs'] == 0) | (data['# contigs'] >= 300) | (data['N50'] <= 25000)]
-5. Genome annotation with Prokka (see prokka.sh)
+5. Genome annotation with Prokka (see prokka.sh) [ref 5]
 
 Note: with the exception of Prokka, all other analyses were done on the HCC at UNL. Prokka was done on AWS. Please refer to this repository for instruction of how to install Prokka on AWS (https://github.com/jcgneto/installing_conda_and_prokka_aws). The reason to use Prokka on AWS is that it allowed us to customized the reference genome database inside the program to contain a Bifidobacterium genus folder that used specific assemblies chosen by us (the list of assemblies can be found here (https://github.com/jcgneto/bifidobacterium/blob/master/list_reference_bifido_genomes.txt).
 See prokka_genus.sh for the program used to create the genus database. Genomes were selected based on the status of the project - it had to be completed!
@@ -26,10 +26,10 @@ Phylogroup determination was done using a GTR model-based phylogeny that had as 
 by Roary, and here are the computational steps:
 
 1. First, the common steps above were used to produce the .gff files with Prokka as input for Roary
-2. Roary was used to produce the core-genome alignment and pangenome file (gene_presence_absence.csv) (see roary.sh)
-3. Phylogenetic tree was constructed using FasTree using a GTR model (see fastree.sh)
+2. Roary was used to produce the core-genome alignment and pangenome file (gene_presence_absence.csv) (see roary.sh) [ref 6]
+3. Phylogenetic tree was constructed using FasTree using a GTR model (see fastree.sh) [ref 7]
 4. Phylogenetic tree visualization was done with Phandango using the bifidobacterium.tree by Fastree and
-    gene_presence_absence.csv as input files (https://jameshadfield.github.io/phandango/#/)
+    gene_presence_absence.csv as input files (https://jameshadfield.github.io/phandango/#/) [ref 8]
 5. Phylogroups were determined by inspection of the phylogram and pangenome heatmap. In total, there were 5 phylogroups in
     the dataset containing 18 genomes.
 
@@ -39,11 +39,11 @@ After defining the phylogroup structure, we have accessed the potential for phyl
 In order to do that the following steps were taken:
 
 1. Run the common (general) steps in the analysis
-2. Within each phylogroup (see phylogroup analysis above) we ran the snp-sites analysis using the roary output core_geneme_alignment.aln file 
+2. Within each phylogroup (see phylogroup analysis above) we ran the snp-sites analysis [ref 9] using the roary output core_geneme_alignment.aln file 
     as input (see scripts named as snp_sites*.sh),
-    followed by filtering putative recombination regions with Gubbins (see scripts named as gubbins*.sh) using the 
+    followed by filtering putative recombination regions with Gubbins [ref 10] (see scripts named as gubbins*.sh) using the 
     .aln file from snp_sites as input
-3. Gubbins not only filter recombination regions but generates a FasTree-based phylogenetic tree using the default         parameters chosen by Gubbins
+3. Gubbins not only filters recombination regions but generates a FasTree-based phylogenetic tree using the default         parameters chosen by Gubbins
 4. Phylogenetic tree was visualized using Phandango, with the input files being .tree output from Gubbins plus
     gene_presence_absence.csv file from Roary to access the pangenome within each phylogroup
 5. The combination of phylogenetic positioning and pangenome repertoire were used to define how many phylotypes existed
@@ -63,8 +63,11 @@ phylogroup specific. Otherwise, phylotype specific genes were found by contrasti
 1. Andrews S. (2010). FastQC: a quality control tool for high throughput sequence data. Available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc
 2. Bolger A.M., et al. (2014). Trimmomatic: a flexible trimmer for Illumina sequence data. Bioinformatics, 30(15):2114-20. 
 3. Bankevich A., et al. (2012). SPAdes: A New Genome Assembly Algorithm and Its Applications to Single-Cell Sequencing. Journal of Computational Biology, 19(5): 455–477.
-4. Seemann T. (2014). Prokka: rapid prokaryotic genome annotation. Bioinformatics, 30(14):2068-9.
-5. Andrew J., et al. (2015). Roary: rapid large-scale prokaryote pan genome analysis. Bioinformatics, 31(22):3691–3693.
-6. Croucher N.J. (2014). Rapid phylogenetic analysis of large samples of recombinant bacterial whole genome sequences using Gubbins. Nucleic Acids Research, 43(3): e15. 
-7. Page A.J., et al. (2016). SNP-sites: rapid efficient extraction of SNPs from multi-FASTA alignments. Microbial Genomics, 2(4).
-8. Price M.N., et al. (2010). FastTree 2--approximately maximum-likelihood trees for large alignments.PLoS One, 5(3):e9490.
+4. Gurevich A., et al. (2013). QUAST: quality assessment tool for genome assemblies. Bioinformatics, 29(8):1072-1075.
+5. Seemann T. (2014). Prokka: rapid prokaryotic genome annotation. Bioinformatics, 30(14):2068-9.
+6. Andrew J., et al. (2015). Roary: rapid large-scale prokaryote pan genome analysis. Bioinformatics, 31(22):3691–3693.
+7. Price M.N., et al. (2010). FastTree 2--approximately maximum-likelihood trees for large alignments.PLoS One, 5(3):e9490.
+8. Hadfield J., et al. (2018). Phandango: an interactive viewer for bacterial population genomics. Bioinformatics, 34(2):292–293.
+9. Page A.J., et al. (2016). SNP-sites: rapid efficient extraction of SNPs from multi-FASTA alignments. Microbial Genomics, 2(4).
+10. Croucher N.J. (2014). Rapid phylogenetic analysis of large samples of recombinant bacterial whole genome sequences using Gubbins. Nucleic Acids Research, 43(3): e15. 
+
