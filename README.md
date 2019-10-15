@@ -65,3 +65,4 @@ phylogroup specific. Otherwise, phylotype specific genes were found by contrasti
 3. Bankevich A., et al. (2012). SPAdes: A New Genome Assembly Algorithm and Its Applications to Single-Cell Sequencing. Journal of Computational Biology, 19(5): 455–477.
 4. Seemann T. (2014). Prokka: rapid prokaryotic genome annotation. Bioinformatics, 30(14):2068-9.
 5. Andrew J., et al. (2015). Roary: rapid large-scale prokaryote pan genome analysis. Bioinformatics, 31(22):3691–3693.
+6. 
