@@ -58,5 +58,10 @@ phylogroup specific. Otherwise, phylotype specific genes were found by contrasti
 1. Run common steps, phylogroup and phylotype analyses as described above
 2. Candidate gene identification was done combining the query_pan_genome function inside roary and customed python/pandas scripts. The query_pan_genome function basically seeks to find genes uniquely present, or shared, between two sets of isolates or genomes. Our customed python scripts does virtually the same. We basically filter out all the shared genes from a pangenome matrix, identify candidates unquely present in each group, and lastly, we cross-check the presence of that gene across all phylogroups using crosstabs. The best candidates were selected on the followinng criteria: 1) Be present only in the target group; 2) Longer contigs or sequences; and 3) By avoinding core functions.
 
+## References
 
-
+1. Andrews S. (2010). FastQC: a quality control tool for high throughput sequence data. Available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc
+2. Bolger A.M., et al. (2014). Trimmomatic: a flexible trimmer for Illumina sequence data. Bioinformatics, 30(15):2114-20. 
+3. Bankevich A., et al. (2012). SPAdes: A New Genome Assembly Algorithm and Its Applications to Single-Cell Sequencing. Journal of Computational Biology, 19(5): 455–477.
+4. Seemann T. (2014). Prokka: rapid prokaryotic genome annotation. Bioinformatics, 30(14):2068-9.
+5. Andrew J., et al. (2015). Roary: rapid large-scale prokaryote pan genome analysis. Bioinformatics, 31(22):3691–3693.
