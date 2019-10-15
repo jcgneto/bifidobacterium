@@ -27,7 +27,7 @@ by Roary, and here are the computational steps:
 
 1. First, the common steps above were used to produce the .gff files with Prokka as input for Roary
 2. Roary was used to produce the core-genome alignment and pangenome file (gene_presence_absence.csv) (see roary.sh)
-3. Phylogenetic tree was constructed using FasTree using a GTR model (see fasttree.sh)
+3. Phylogenetic tree was constructed using FasTree using a GTR model (see fastree.sh)
 4. Phylogenetic tree visualization was done with Phandango using the bifidobacterium.tree by Fastree and
     gene_presence_absence.csv as input files (https://jameshadfield.github.io/phandango/#/)
 5. Phylogroups were determined by inspection of the phylogram and pangenome heatmap. In total, there were 5 phylogroups in
